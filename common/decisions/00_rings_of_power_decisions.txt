@@ -1,5 +1,5 @@
 ﻿# Create the One Ring for your character
-create_the_one_ring = {
+rop_create_one_ring = {
 	title = "Create the One Ring"
 	major = yes
 	# cooldown = { days = 30 }
@@ -13,7 +13,7 @@ create_the_one_ring = {
 	# No other character may have created the ring
 	is_valid_showing_failures_only = {
 		NOT = {
-			has_global_variable = global_one_ring_created
+			has_global_variable = global_rop_one_ring_created
 		}
 	}
 
@@ -21,16 +21,16 @@ create_the_one_ring = {
 	is_shown = {
 		# One Ring has not been created
 		NOT = {
-			has_global_variable = global_one_ring_created
+			has_global_variable = global_rop_one_ring_created
 		}
 	}
 
 	effect = {
-		add_trait = bearer_of_the_one_ring
+		add_trait = rop_bearer_of_one_ring
 
 		# Ensure it cannot be created again
 		set_global_variable = {
-			name = global_one_ring_created
+			name = global_rop_one_ring_created
 			value = 1
 		}
 	}

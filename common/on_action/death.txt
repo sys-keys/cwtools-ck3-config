@@ -47,7 +47,7 @@ on_death = {
 		religious_decision.0301 # ancestor died and needs to be buried.
 		religious_decision.0311 # Dynasty member has died and you can raise a runestone
 		game_rule.2				# Exclave Independence
-		rings_of_power_events.0001 # Rings of Power
+		rop_events.0001 # Rings of Power
 	}
 }
 
