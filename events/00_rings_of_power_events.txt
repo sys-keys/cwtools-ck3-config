@@ -1,0 +1,16 @@
+﻿namespace = rings_of_power_events
+
+# Remove One Ring from characters who die
+rings_of_power_events.0001 = {
+	type = character_event
+	hidden = yes
+
+	trigger = {
+		has_trait = bearer_of_the_one_ring
+	}
+
+	immediate = {
+		# TODO Do not show notification
+		remove_trait = bearer_of_the_one_ring
+	}
+}

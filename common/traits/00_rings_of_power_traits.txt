@@ -1,0 +1,41 @@
+﻿bearer_of_the_one_ring = {
+	name = "Bearer of the One Ring"
+	index = 900
+
+	icon = {
+		first_valid = {
+			triggered_desc = {
+				trigger = { NOT = { exists = this } }
+				desc = bearer_of_the_one_ring.dds
+			}
+			
+			desc = bearer_of_the_one_ring.dds
+		}
+	}
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = "This person carries the One Ring, commanding its power."
+			}
+			desc = "[ROOT.GetCharacter.GetFirstNameNoTooltip] carries the One Ring, commanding its power."
+		}
+	}
+
+	# Make sure it is never inherited or given to created characters
+	inherit_chance = 0
+	random_creation = 0
+	genetic = no
+
+	good = yes
+	portrait_extremity_shift = 0.30
+	health_trait = yes
+	fame = yes
+
+	# Bearers of the ring have their health and fertility boosted
+	health = 5.0
+	fertility = 0.5
+}

@@ -1,0 +1,41 @@
+# Rings of Power
+The ring should offer great power at great cost, a high stake gamble.
+
+Bearers of the ring
+    - will have a boosted life expectancy and fertility
+    - increased prestige gain
+    - may use ring to influence others
+    - usage of the ring can apply negative effects
+    - have a chance to lose the ring
+    - may not choose to pass it on, unless they meet specific criteria
+    - may be targeted with scheme to steal the ring
+    - events will happen giving opportunity to use ring
+
+Ring is created, but not worn by any
+    - may be discovered by a character due to a random event
+        - who should have a chance of finding it?
+
+Each use of the ring has a chance of inflicting 
+
+Decisions:
+    Create the One Ring:
+        Can be performed once in history
+        Grants one ring to creator
+
+On Death:
+    One Ring is removed
+
+Events based on holders personality:
+    Paranoid:
+        1. Occasional small stress gain - you fear people are seeking to take the ring
+        2. Suspect member of court of plotting to steal ring - 
+            A: Accuse of stealing ring -> opinion loss OR they were plotting and plot is revealed
+            B: Do nothing, suffer large stress gain
+    Sadistic:
+        1. Opportunity to manipulate someone and embarass them, 
+            A: Choose to use ring, reduce stress and give debuff to targeted person
+            B: Do not use, stress increase
+
+Schemes that can be used by bearer - the more powerful, the more risk to the user:
+
+Schemes that can be used on bearer:
