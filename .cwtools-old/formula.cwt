@@ -1,0 +1,10 @@
+### TODO
+single_alias[formula_block] = {
+    value = int
+
+    ## cardinality = 0..inf
+    if = {
+        limit = single_alias_right[trigger_block]
+        add = int
+    }
+}

@@ -1,4 +1,7 @@
 ﻿# Create the One Ring for your character
+# Localisation:
+# 	rop_create_one_ring_confirm
+# 	rop_create_one_ring_tooltip
 rop_create_one_ring = {
 	title = "Create the One Ring"
 	major = yes

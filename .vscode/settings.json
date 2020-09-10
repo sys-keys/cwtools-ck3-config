@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.txt": "ck2"
+    },
+    "cwtools.rules_folder": "./.cwtools",
+    "cwtools.rules_version": "manual",
+    "cwtools.trace.server": "messages"
+}

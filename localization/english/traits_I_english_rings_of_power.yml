@@ -1,4 +1,0 @@
-﻿l_english:
- trait_bearer_of_the_one_ring:0 "Bearer of the One Ring"
- trait_bearer_of_the_one_ring_desc:0 "This person carries the One Ring, commanding its power"
- trait_bearer_of_the_one_ring_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] carries the One Ring, commanding its power"

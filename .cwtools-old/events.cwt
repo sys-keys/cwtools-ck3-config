@@ -1,0 +1,90 @@
+enums = {
+    enum[event_types] = {
+        character_event
+    }
+
+    enum[event_themes] = {
+        mental_health
+    }
+}
+
+types = {
+    type[event] = {
+        path = "game/events"
+
+        ## push_scope = character
+        subtype[character_event] = {
+            type = character_event
+        }
+
+        subtype[hidden] = {
+            hidden = yes
+        }
+    }
+}
+
+event = {
+    type = enum[event_types]
+
+    ## cardinality = 0..1
+    title = scalar
+
+    ## cardinality = 0..1
+    desc = scalar
+
+    ## cardinality = 0..1
+    theme = enum[event_themes]
+
+    ## cardinality = 0..1
+    left_portrait = {
+        character = scope[character]
+        animation = <portrait_animation>
+    }
+
+    ## cardinality = 0..1
+    right_portrait = {
+        character = scope_field
+        animation = <portrait_animation>
+    }
+
+    ## cardinality = 0..1
+    hidden = bool
+
+    ## cardinality = 0..1
+    trigger = {
+        ## cardinality = 0..inf
+        alias_name[trigger] = alias_match_left[trigger]
+    }
+
+    ## cardinality = 0..1
+    on_trigger_fail = {
+        ## cardinality = 0..inf
+        alias_name[effect] = alias_match_left[effect]
+    }
+
+    ## cardinality = 0..1
+    weight_multiplier = single_alias_right[weight_multiplier_block]
+
+    subtype[!hidden] = {
+        ## cardinality = 1..inf
+        option = {
+            ### Localization key for the event option button text
+            name = scalar
+    
+            ## cardinality = 0..inf
+            alias_name[effect] = alias_match_left[effect]
+    
+            ## cardinality = 0..1
+            trigger = {
+                ## cardinality = 0..inf
+                alias_name[trigger] = alias_match_left[trigger]
+            }
+        }
+    }
+
+    ## cardinality = 0..1
+    immediate = {
+        ## cardinality = 0..inf
+        alias_name[effect] = alias_match_left[effect]
+    }
+}

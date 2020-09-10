@@ -1,0 +1,6 @@
+﻿l_english:
+ trait_rop_bearer_of_one_ring:0 "Bearer of the One Ring"
+ trait_rop_bearer_of_one_ring_desc:0 "This person carries the One Ring, commanding its power"
+ trait_rop_bearer_of_one_ring_character_desc:0 "[ROOT.GetCharacter.GetFirstNameNoTooltip] carries the One Ring, commanding its power"
+ rop_create_one_ring_confirm:0 "Do it"
+ rop_create_one_ring_tooltip:0 "Claim its power for your own"

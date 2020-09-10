@@ -1,0 +1,9 @@
+types = {
+    type[portrait_animation] = {
+        path = "game/gfx/portraits/portrait_animations"
+    }
+}
+
+portrait_animation = {
+
+}
