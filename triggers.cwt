@@ -1,0 +1,37 @@
+single_alias[trigger_block] = {
+    ## cardinality = 0..inf
+    alias_name[trigger] = alias_match_left[trigger]
+}
+
+alias[trigger:scope_field] = { alias_name[trigger] = alias_match_left[trigger] }
+alias[trigger:value_field] = { alias_name[trigger] = alias_match_left[trigger] }
+
+alias[trigger:value_field] = value_field
+alias[trigger:scope_field] = scope_field
+
+alias[trigger:NOT] = {
+	## cardinality = 1..1
+	alias_name[trigger] = alias_match_left[trigger]
+}
+
+alias[trigger:NOR] = { alias_name[trigger] = alias_match_left[trigger] }
+alias[trigger:NAND] = { alias_name[trigger] = alias_match_left[trigger] }
+alias[trigger:AND] = { alias_name[trigger] = alias_match_left[trigger] }
+alias[trigger:OR] = { alias_name[trigger] = alias_match_left[trigger] }
+
+### Outputs to the game log when this trigger is hit
+alias[trigger:debug_log] = bool
+
+### Outputs full trigger content when this trigger is hit
+alias[trigger:debug_log_details] = bool
+
+### Checks whether the specified scope target exists (check for not being the null object)
+alias[trigger:exists] = scope_field
+
+## scope = character
+### Does the character have this flag?
+alias[trigger:has_character_flag] = scalar
+
+## scope = character
+### Does the character have this trait or a trait of this trait group?
+alias[trigger:has_trait] = <trait>

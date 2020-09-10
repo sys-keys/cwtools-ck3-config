@@ -1,0 +1,71 @@
+alias[effect:scope_field] = { alias_name[effect] = alias_match_left[effect] }
+alias[effect:value_field] = { alias_name[effect] = alias_match_left[effect] }
+
+alias[effect:NOT] = {
+	## cardinality = 1..1
+	alias_name[effect] = alias_match_left[effect]
+}
+
+alias[effect:NOR] = { 
+    alias_name[effect] = alias_match_left[effect] 
+}
+
+alias[effect:NAND] = { 
+    alias_name[effect] = alias_match_left[effect] 
+}
+
+alias[effect:AND] = { 
+    alias_name[effect] = alias_match_left[effect] 
+}
+
+alias[effect:OR] = { 
+    alias_name[effect] = alias_match_left[effect] 
+}
+
+## scope = dynasty
+alias[effect:add_dynasty_modifier] = scalar
+alias[effect:add_dynasty_modifier] = {
+    modifier = scalar
+    ## cardinality = 0..1
+    days = int
+    ## cardinality = 0..1
+    weeks = int
+    ## cardinality = 0..1
+    years = int
+}
+
+## scope = character
+### Removes a trait from a character. Tooltip will not be shown if the character doesn't have the trait.
+alias[effect:remove_trait] = <trait>
+
+## scope = character
+### Adds stress to character
+alias[effect:add_stress] = int
+
+## scope = character
+### Adds flag to character
+alias[effect:add_character_flag] = scalar
+alias[effect:add_character_flag] = {
+    flag = scalar
+    
+    days = int
+    weeks = int
+    years = int
+}
+
+## scope = any
+alias[effect:trigger_event] = <event>
+
+## scope = any
+alias[effect:trigger_event] = {
+    ## cardinality = 0..1
+    id = <event>
+    ## cardinality = 0..1
+    on_action = <on_action>
+
+    ## cardinality = 0..1
+    days = {
+        ## cardinality = 2..2
+        int[0..inf]
+    }
+}
