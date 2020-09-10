@@ -1,6 +1,0 @@
-﻿on_death = {
-	events = {
-		# Remove One Ring
-		rop_events.0001
-	}
-}
